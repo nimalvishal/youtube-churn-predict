@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gaining process</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gain.css') }}">
+</head>
+<body> 
+    <section>
+        <div class="onebox">
+            <p><h2>No. Of YouTube Videos</h2></p>
+            <span style="font-size: 36px; color: rgb(62, 245, 108); font-weight: 700; padding-left: 40%;">258</span>
+        </div>  
+        <div class="twobox">
+            <p><h2>Total likes</h2></p>
+            <span style="font-size: 36px; color: rgb(241, 241, 14); font-weight: 700; padding-left: 40%;">2680</span>
+        </div> 
+        <div class="thrbox">
+            <p><h2>Subcribers</h2></p>
+            <span style="font-size: 36px; color: rgb(94, 41, 3); font-weight: 700; padding-left: 40%;">1K</span>
+        </div>
+        <div class="furbox">
+            <p><h2>Genre</h2></p>
+            <span style="font-size: 36px; color: rgb(30, 219, 248); font-weight: 700; padding-left: 36%;">Sports</span>
+        </div>
+        <div class="video-container">
+            <video loop autoplay muted>
+                <source src="{{ url_for('static', filename='count.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</body>
+</html>
