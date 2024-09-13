@@ -4,7 +4,7 @@ import os
 import plotly.express as px #for visualization
 import matplotlib.pyplot as plt
 import plotly.io as pio
-
+import requests
 app = Flask(__name__)
 
 # Get the current directory
@@ -64,8 +64,9 @@ def onscreen():
 @app.route('/predict')
 
 def predict():
-    # Pass the HTML of the pie chart to the predict.html template
-    return render_template('predict.html')
+    remote_url = 'http://192.168.225.185:8501'  # Replace with your desired remote URL
+    return redirect(remote_url)
+
 @app.route('/recommed')
 def recommend():
     return render_template('recommend.html')
