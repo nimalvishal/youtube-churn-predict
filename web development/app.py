@@ -11,7 +11,7 @@ app = Flask(__name__)
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the full path to the CSV file
-file_path = os.path.join(current_directory, 'E:/socket/web development/pythonfiles/dataset1.csv')
+file_path = os.path.join(current_directory, 'D:/practice/youtube-churn-predict-main/web development/pythonfiles/dataset1.csv')
 
 # Read the CSV file into a DataFrame
 user_data = pd.read_csv(file_path)
